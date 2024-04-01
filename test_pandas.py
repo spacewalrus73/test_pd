@@ -39,7 +39,10 @@ df.rename(
 df["Корень"] = df["Корень"].str.replace(',', '.').astype(float)
 
 # Группировка
-result = df.groupby(df.columns).sum()
+result = df.groupby(['x1', 'x2', 'x3',
+                     'y1', 'y2', 'y3',
+                     'z1', 'z2', 'z3',
+                     'values']).sum().reset_index()
 
 df_2 = pd.DataFrame({"x1": ["x1 1"], "new_columns": "ok"})
 
