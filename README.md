@@ -9,5 +9,5 @@ df.groupby(['x1',              'x2',        'x3',        'y1',        'y2',     
 6. Выполнить merge основного DataFrame на df_2 = pd.DataFrame({'x1':['x1 1'], 'new_columns':'ok'})
 Результирующий датафрейм:
 
-![](https://github.com/spacewalrus73/Gifs/blob/master/png_3prj/result_df)
+![](https://github.com/spacewalrus73/Gifs/blob/master/png_3prj/result_df.png)
 
